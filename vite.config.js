@@ -36,4 +36,10 @@ export default defineConfig({
       svgFolder: resolve(__dirname, "./public"),
     }),
   ],
+  resolve: {
+    alias: {
+      "@html": resolve(__dirname, `${FRONT_PATH}/html`),
+      "@assests": resolve(__dirname, `${FRONT_PATH}/assets`),
+    },
+  },
 });
